@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <script src="p5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>My Top 5 Movies</h1>
+<section>
+<div id="movie">
+<!-- ---------------------------------------------------------------------------- -->
+<!-- Table tutorial from https://www.w3schools.com/html/html_tables.asp -->
+    <table>
+        <tr>
+          <th>Poster </th>
+          <th>Title</th>
+          <th>My Rating</th>
+        </tr>
+        <tr>
+          <td><a href="https://letterboxd.com/film/dead-poets-society/" target="_blank"> <img src="images/dps.jpg"  height="200px"></a></td>
+          <td><a class="title" href="https://letterboxd.com/film/dead-poets-society/" target="_blank">Dead Poets Society</a></td>
+          <td>
+            <!-- ---------------------------------------------------------------------------- -->
+            <!-- Star tutorial from https://www.w3schools.com/howto/howto_css_star_rating.asp -->
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+        </td>
+            <!-- remixed by changing the shape and colour of the checked and unchecked stars (now hearts)-->
+            <!-- ---------------------------------------------------------------------------- -->
+         </tr>
+         <tr>
+            <td><a href="https://letterboxd.com/film/la-la-land/" target="_blank"> <img src="images/LLL.jpg"  height="200px"></a></td>
+            <td><a class="title" href="https://letterboxd.com/film/la-la-land/" target="_blank">La La Land</a></td>
+            <td> <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span></td>
+          </tr>
+        <tr>
+          <td><a href="https://letterboxd.com/film/brokeback-mountain/" target="_blank"> <img src="images/bbm.jpg"  height="200px"></a></td>
+          <td><a class="title" href="https://letterboxd.com/film/brokeback-mountain/" target="_blank">Brokeback Mountain</a></td>
+          <td> <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span class="fa fa-heart checked"></span>
+            <span id="heart" class="fa fa-heart "></span></td>
+        </tr>
+          <tr>
+            <td><a href="https://letterboxd.com/film/fantastic-mr-fox/" target="_blank"> <img src="images/fmf.jpg"  height="200px"></a></td>
+            <td><a class="title" href="https://letterboxd.com/film/fantastic-mr-fox/" target="_blank">Fantastic Mr. Fox</a></td>
+            <td> <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span id="heart" class="fa fa-heart"></span></td>
+          </tr>
+          <tr>
+            <td><a href="https://letterboxd.com/film/whiplash-2014/" target="_blank"> <img src="images/whip.jpg"  height="200px"></a></td>
+            <td><a class="title" href="https://letterboxd.com/film/whiplash-2014/" target="_blank">Whiplash</a></td>
+            <td> <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span class="fa fa-heart checked"></span>
+              <span id="heart" class="fa fa-heart"></span></td>
+          </tr>
+      </table>
+     <!-- remixed by adding links to the movie posters and titles as well as hover features (zoom and colour changing)-->
+<!-- ---------------------------------------------------------------------------- -->
+
+     <div id="question"><script src="sketch.js"></script> </div>
+
+     <h2>Want More Info About These Movies?</h2>
+     <br></br>
+
+<section id="radio">
+    <div class="movie-options">
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- Radio and label Tutorial https://www.w3schools.com/tags/att_input_type_radio.asp -->
+        <label>
+            <input type="radio" name="movie" class="movieCheck" data-target="movie1"> Dead Poets Society</label>
+
+        <label>
+            <input type="radio" name="movie" class="movieCheck" data-target="movie2"> La La Land</label>
+
+        <label>
+            <input type="radio" name="movie" class="movieCheck" data-target="movie3"> Brokeback Mountain</label>
+
+        <label>
+            <input type="radio" name="movie" class="movieCheck" data-target="movie4"> Fantastic Mr. Fox</label>
+
+        <label>
+            <input type="radio" name="movie" class="movieCheck" data-target="movie5"> Whiplash</label>
+         <!-- ---------------------------------------------------------------------------- -->
+    </div>
+    <div id="movie1" class="movieText">
+        <p><b>Dead Poets Society, 1989</b></p>
+        <p>He was their inspiration. He made their lives extraordinary.<br> At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.</p>
+        <p><b>Cast:</b> Robin Williams, Robert Sean Leonard, Ethan Hawke, Josh Charles, Gale Hansen, Dylan Kussman, Allelon Ruggiero, James Waterston</p>
+    </div>
+
+    <div id="movie2" class="movieText">
+        <p><b>La La Land, 2016</b></p>
+        <p>Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
+        <p><b>Cast:</b> Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt, J.K. Simmons, Amiée Conn</p>
+    </div>
+
+    <div id="movie3" class="movieText">
+        <p><b>Brokeback Mountain, 2005</b></p>
+        <p>In 1960s Wyoming, two men develop a strong emotional and sexual relationship that endures as a lifelong connection complicating their lives as they get married and start families of their own.</p>
+        <p><b>Cast:</b> Heath Ledger, Jake Gyllenhaal, Michelle Williams, Anne Hathaway, Randy Quaid, Linda Cardellini, Anna Faris, David Harbour</p>
+    </div>
+
+    <div id="movie4" class="movieText">
+        <p><b>Fantastic Mr. Fox, 2009</b></p>
+        <p>The Fantastic Mr. Fox, bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.</p>
+        <p><b>Cast:</b> George Clooney, Meryl Streep, Jason Schwartzman, Wallace Wolodarsky, Eric Chase Anderson, Willem Dafoe, Bill Murray, Robin Hurlstone, Hugo Guinness, Michael Gambon, Helen McCrory, Owen Wilson, Adrien Brody</p>
+    </div>
+
+    <div id="movie5" class="movieText">
+        <p><b>Whiplash, 2014</b></p>
+        <p>Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.</p>
+        <p><b>Cast:</b> Miles Teller, J.K. Simmons, Paul Reiser, Melissa Benoist, Austin Stowell, Nate Lang, Chris Mulkey, Damon Gupton, Suanne Spoke</p>
+    </div>
+
+    <script>
+        // -------------------------------------------------------------------------------------
+        // HTML DOM tutorials (for query and get) https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+        document.querySelectorAll('.movieCheck').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.movieText').forEach(div => {
+                    div.style.display = "none"; 
+                });
+                let targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).style.display = "block"; 
+            });
+        });
+        // -------------------------------------------------------------------------------------
+    </script>
+</section>
+</body>
+</html>
