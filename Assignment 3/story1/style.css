@@ -1,0 +1,52 @@
+body{
+    background-color: azure;
+    font-family: "kobenhavn-cs", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    position: absolute;
+    top: 90px;
+    left: 140px;
+}
+
+p{
+    position: relative;
+    left: 130px;
+    top: 50px;
+}
+
+button{
+    background-color:#262872; 
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-size: 16px;
+    color: white;
+  }
+  
+button:hover {
+    background-color: #47b7c8;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.05);
+  }
+
+#sketch{
+    position: absolute;
+    top:100px;
+    left: 1140px;
+  }
+
+div{
+   font-family: "kobenhavn-cs", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+  }
+
