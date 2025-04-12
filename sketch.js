@@ -2,7 +2,7 @@ var x = 0;
 var y = 0;
 function setup(){
     createCanvas(720, 480); 
-    canvas.position(325, 800); 
+    // canvas.position(325, 800); 
 }
 
 function draw(){
